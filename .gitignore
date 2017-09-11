@@ -111,5 +111,6 @@ Temporary Items
 .apdisk
 .ninja_deps
 .ninja_log
-templates/
 migrations/
+static/img/
+staticfiles/js/
