@@ -1,3 +1,2 @@
-web: gunicorn irblog.wsgi --log-file -
-python manage.py collectstatic --noinput
-heroku config:set DISABLE_COLLECTSTATIC=1
+web: gunicorn irblog.wsgi --log-file -;
+web: python my_django_app/manage.py collectstatic --noinput;
