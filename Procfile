@@ -1,2 +1,2 @@
 web: gunicorn irblog.wsgi --log-file -;
-web: python my_django_app/manage.py collectstatic --noinput;
+web: python irblog/manage.py collectstatic --noinput;

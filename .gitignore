@@ -112,7 +112,7 @@ Temporary Items
 .ninja_deps
 .ninja_log
 migrations/
-blog/static/img/
+static/img/
 staticfiles/js/
 staticfiles/admin/img/LICENSE
 staticfiles/admin/img/LICENSE.2c54f4e1ca1c
@@ -165,6 +165,6 @@ staticfiles/admin/img/tooltag-arrowright.svg.gz
 staticfiles/admin/js/
 staticfiles/css/
 staticfiles/img/
-blog/static/
+static/
 templates/blog/base.html
 templates/blog/post_detail.html
