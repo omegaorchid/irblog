@@ -118,4 +118,5 @@ static/.DS_Store
 static/img/.DS_Store
 
 # Custom
-static/
+static/js
+static/img/favicon
