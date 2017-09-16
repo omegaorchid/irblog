@@ -40,8 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'django_jinja',
-    'whitenoise'
-    # 'jquery',
+    'whitenoise',
 ]
 
 MIDDLEWARE = [

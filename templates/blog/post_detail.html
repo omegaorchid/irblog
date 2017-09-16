@@ -3,14 +3,16 @@
 {% block content %}
     <div class="post">
         <h1>{{ post.title }}</h1>
-        {% if post.published_date %}
-            <div class="date">
-                Published: {{ post.published_date }}
-            </div>
-        {% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
         {% if user.is_authenticated %}
-            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span>Edit</span></a>
+                <a class="btn btn-lg" href="{% url 'post_edit' pk=post.pk %}"><i class="fa fa-pencil-square-o fa-5" aria-hidden="true"> Edit</i></a>
+            {% if not post.published_date %}
+                <a class="btn btn-lg" href="{% url 'post_publish' pk=post.pk %}"><i class="fa fa-newspaper-o fa-5" aria-hidden="true"> Publish</i></a>
+                {% endif %}
+        {% else %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
         {% endif %}
     </div>
 {% endblock %}

@@ -1,5 +1,8 @@
+@import "bootstrap.css";
+
+
 html {
-    font-size: 10px;
+    font-size: 10px !important;
 }
 
 body {
@@ -30,6 +33,7 @@ body {
 
 #header_title {
     color: #333333;
+    font-size: 5rem !important;
 }
 
 .content {
@@ -149,4 +153,3 @@ a:hover {
         font-size: 1.9rem;
     }
 }
-
